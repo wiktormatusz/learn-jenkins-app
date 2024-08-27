@@ -31,6 +31,7 @@ pipeline {
                     echo "nok"
                 fi
                 cd
+                ls -la
                 npm test
                 '''
             }
