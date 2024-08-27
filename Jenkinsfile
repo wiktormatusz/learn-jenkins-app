@@ -24,7 +24,12 @@ pipeline {
             steps {
                 sh '''
                 echo "Test stage"
-                test -e "/build/index.html"
+                if [ -e x.txt ]
+                then
+                    echo "ok"
+                else
+                    echo "nok"
+                fi
                 '''
             }
 
