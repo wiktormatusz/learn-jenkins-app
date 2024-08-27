@@ -30,6 +30,7 @@ pipeline {
                 else
                     echo "nok"
                 fi
+                npm test
                 '''
             }
 
